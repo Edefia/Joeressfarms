@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joerees Farms - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="screens.css"> -->
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="favicon 1.jpeg">
+    <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header from index.html -->
+    <div id="header">
+        <nav>
+            <img src="joerees.jpg" alt="Joerees Farms Logo" onclick="window.location.href = 'index.html'">
+            <ul id="sidemenu">
+                <li><a href="index.html"><i class="fas fa-house-chimney"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title bounce-in"><i class="fas fa-truck-moving"></i> Our Exceptional Services</h1>
+            <p class="hero-subtitle slide-in">Delivering Freshness and Quality, Every Step of the Way</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Services Section -->
+    <section id="services" class="services-page">
+        <!-- Hero Banner -->
+        <!-- <div class="services-hero">
+            <h1 class="hero-title bounce-in"><i class="fas fa-truck-moving"></i> Our Exceptional Services</h1>
+            <p class="hero-subtitle slide-in">Delivering Freshness and Quality, Every Step of the Way</p>
+        </div> -->
+
+        <!-- Services Grid -->
+                <div class="services fade-in" id="services" style="margin-top: -100px; background: transparent;">
+                    <h2 class="slide-in-left"><i class="fa-solid fa-truck"></i> Our Business Operations</h2>
+                    <div class="services-grid">
+                <div class="service-box slide-in-left">
+                    <img src="team6.jpg" alt="Fresh Poultry">
+                    <h3><i class="fas fa-egg"></i> Premium Poultry Products</h3>
+                    <p>We offer a comprehensive range of fresh poultry products, including whole chickens, chicken breasts, and chicken thighs. All products are processed in our modern facility under strict quality control measures.</p>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fresh Daily</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Quality Assurance</span>
+                    </div>
+                </div>
+                
+                <div class="service-box">
+                    <img src="delivery vehicles.jpg" alt="Delivery Truck">
+                    <h3><i class="fas fa-shipping-fast"></i> Efficient Distribution</h3>
+                    <p>Our dedicated delivery fleet ensures timely delivery of fresh products across Accra. We offer daily free home delivery and flexible delivery schedules for wholesale customers.</p>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Timely Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Home Delivery</span>
+                    </div>
+                </div>
+
+                <div class="service-box slide-in-right">
+                    <img src="chicken.jpg" alt="Farm Fresh">
+                    <h3><i class="fas fa-check-circle"></i> Quality Assurance</h3>
+                    <p>Every product undergoes rigorous quality checks and is certified safe for consumption. We maintain complete traceability from farm to table, ensuring the highest standards of food safety.</p>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Certified Safe</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>Traceability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How We Work Flowchart -->
+        <div class="flowchart">
+            <h2 class="fade-in"><i class="fas fa-cogs"></i> How We Work</h2>
+            <div class="flowchart-container">
+                <div class="flow-item fade-in-up">
+                    <i class="fas fa-egg"></i>
+                    <p>Farm Fresh Production</p>
+                </div>
+                <i class="fas fa-arrow-right flow-arrow slide-in"></i>
+                <div class="flow-item fade-in-up" style="animation-delay: 0.2s;">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Quality Checks</p>
+                </div>
+                <i class="fas fa-arrow-right flow-arrow slide-in" style="animation-delay: 0.4s;"></i>
+                <div class="flow-item fade-in-up" style="animation-delay: 0.4s;">
+                    <i class="fas fa-truck"></i>
+                    <p>Swift Delivery</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="services-cta">
+            <h2 class="fade-in"><i class="fas fa-truck-loading"></i> Need a Delivery?</h2>
+            <p class="slide-in">Experience our top-notch services today!</p>
+            <a href="contact.html" class="cta-button pulse"><i class="fas fa-phone-alt"></i> Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer from index.html -->
+    <footer class="footer fade-in">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Joerees Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
+                <img src="joerees.jpg" alt="Joerees Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home" style="color: #ffd700;"></i> Home</a></li>
+                    <li><a href="products.html"><i class="fas fa-box" style="color: #ffd700;"></i> Products</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle" style="color: #ffd700;"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell" style="color: #ffd700;"></i> Services</a></li>
+                    <li><a href="team.html"><i class="fas fa-users" style="color: #ffd700;"></i> Team</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope" style="color: #ffd700;"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> 020 8121199</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Accra, Ghana</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Joerees Farms & Consult. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.link/iwgj9f" target="_blank" class="whatsapp-icon" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
