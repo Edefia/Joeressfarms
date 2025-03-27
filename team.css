@@ -1,3 +1,16 @@
+#header .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('hero-4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    min-height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .team-page { 
     padding: 100px 5%; 
     background: #f9f9f9; 

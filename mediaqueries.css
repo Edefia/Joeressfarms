@@ -76,7 +76,7 @@
      overflow-x: hidden;
      display: none;
      width: 200px;
-     height: 80%;
+     height: 100%;
      background:  linear-gradient(to bottom, #231212, #231212, transparent);
      transition: right 0.5s ease-in-out;
      z-index: 1000;
