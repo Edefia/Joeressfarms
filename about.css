@@ -863,7 +863,9 @@
     background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
 }
-
+.safety-category.active .safety-question h3{
+    color: white;
+}
 .faq-item.active .faq-question i,
 .safety-category.active .safety-question i {
     color: white;
@@ -883,6 +885,10 @@
     transform: scaleY(1);
     opacity: 1;
     max-height: 1000px;
+}
+
+.safety-category.active .safety-answer{
+    padding: 0 20px 20px;
 }
 .faq-item.active .faq-question h3{
     color: white;
