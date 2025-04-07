@@ -9,6 +9,12 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+:root {
+    --primary-color: #F3EB28; /* Bright yellow for highlights or buttons */
+    --secondary-color: #247246; /* Deep green for backgrounds or headers */
+    --accent-color: #4CAF50; /* Light green for accents or borders */
+  }
+
 /* Navigation Bar */
 #header {
     width: 100%;
@@ -40,7 +46,8 @@ body {
     align-items: center;
     justify-content: space-between;
     /* flex-wrap: wrap; */
-    background-color: #4CAF50;
+    /* background-color: var(--accent-color); */
+    background-color: var(--secondary-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 10px 10%;
     
@@ -100,7 +107,8 @@ body {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     white-space: wrap;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #FFD700;
+    /* color: #FFD700; */
+    color: var(--primary-color);
 }
 
 #header .hero p {
@@ -111,7 +119,8 @@ body {
 }
 
 #header .cta-button {
-    background-color: #FFD700;
+    /* background-color: #FFD700; */
+    background-color: var(--primary-color);
     color: #333;
     padding: 10px 20px;
     text-decoration: none;
@@ -165,7 +174,8 @@ body {
 
 
 nav ul li a:hover {
-    color: #4CAF50;
+    /* color: var(--accent-color); */
+    color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -217,7 +227,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: #4CAF50;
+    color: var(--accent-color);
 }
 
 
@@ -241,7 +251,7 @@ nav ul li a:hover {
 }
 
 .feature i {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 1.2rem;
 }
 
@@ -263,7 +273,7 @@ nav ul li a:hover {
 
 .stat h3 {
     font-size: 2.5rem;
-    color: #4CAF50;
+    color: var(--accent-color);
     margin-bottom: 10px;
 }
 
@@ -300,11 +310,11 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    color: #4CAF50;
+    color: var(--accent-color);
 }
 
 .our-values h2 i {
-    color: #4CAF50;
+    color: var(--accent-color);
 }
 
 .values-grid {
@@ -328,12 +338,12 @@ nav ul li a:hover {
 
 .value-card i {
     font-size: 2.5rem;
-    color: #4CAF50;
+    color: var(--accent-color);
     margin-bottom: 20px;
 }
 
 .value-card h3 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
@@ -360,11 +370,11 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    color: #4CAF50;
+    color: var(--accent-color);
 }
 
 .services h2 i {
-    color: #4CAF50;
+    color: var(--accent-color);
 }
 
 .services-grid {
@@ -394,12 +404,12 @@ nav ul li a:hover {
     width: 100%;
     height: 200px; /* Adjusted height for better aspect ratio */
     object-fit: cover;
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .service-box h3 {
     font-size: 1.5rem;
-    color: #4CAF50;
+    color: var(--accent-color);
     margin: 20px 20px 10px; /* Adjusted margin */
     display: flex;
     align-items: center;
@@ -408,7 +418,7 @@ nav ul li a:hover {
 }
 
 .service-box h3 i {
-    color: #4CAF50; /* Icon color */
+    color: var(--accent-color); /* Icon color */
     font-size: 1.5rem; /* Icon size */
 }
 
@@ -428,7 +438,7 @@ nav ul li a:hover {
 }
 
 .service-box .feature i {
-    color: #4CAF50; /* Icon color for features */
+    color: var(--accent-color); /* Icon color for features */
 }
 
 
@@ -460,7 +470,7 @@ nav ul li a:hover {
 }
 
 .products h2 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
@@ -534,7 +544,7 @@ nav ul li a:hover {
 }
 
 .order-btn {
-    background: #4CAF50;
+    background: var(--accent-color);
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
@@ -558,7 +568,7 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 1.5em;
     margin-bottom: 10px;
     display: flex;
@@ -590,7 +600,7 @@ nav ul li a:hover {
 }
 
 .product-features i {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 0.8em;
 }
 
@@ -603,7 +613,7 @@ nav ul li a:hover {
 }
 
 .team h2 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
@@ -651,6 +661,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top ;
     transition: transform 0.5s ease;
 }
 
@@ -691,7 +702,7 @@ nav ul li a:hover {
 }
 
 .member-info h3 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 1.5em;
     margin-bottom: 5px;
     display: flex;
@@ -727,7 +738,7 @@ nav ul li a:hover {
 }
 
 .contact-info h2, .contact-form h2 {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
     margin-bottom: 30px;
     opacity: 0;
@@ -755,13 +766,13 @@ nav ul li a:hover {
 }
 
 .contact-item i {
-    color: #4CAF50;
+    color: var(--accent-color);
     font-size: 1.5em;
     margin-top: 15px;
 }
 
 .contact-text h3 {
-    color: #4CAF50;
+    color: var(--accent-color);
     margin-bottom: 5px;
 }
 
@@ -771,7 +782,7 @@ nav ul li a:hover {
 }
 
 .social-media h3 {
-    color: #4CAF50;
+    color: var(--accent-color);
     margin-bottom: 15px;
 }
 
@@ -783,7 +794,7 @@ nav ul li a:hover {
 .social-link {
     width: 40px;
     height: 40px;
-    background: #4CAF50;
+    background: var(--accent-color);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -823,7 +834,7 @@ nav ul li a:hover {
 }
 
 .submit-btn {
-    background: #4CAF50;
+    background: var(--accent-color);
     color: white;
     padding: 12px 30px;
     border: none;
@@ -840,7 +851,7 @@ nav ul li a:hover {
 
 /* Footer */
 .footer {
-    background: #4CAF50;
+    background: var(--secondary-color);
     color: white;
     padding: 100px 5% 20px;
     margin-bottom: -100px;
