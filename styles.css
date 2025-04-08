@@ -1070,6 +1070,356 @@ img:hover {
     } 
 }
 
+/* Upcoming Products Section */
+.upcoming-products {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+}
+
+.upcoming-products h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #247246;
+    font-size: 2.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.upcoming-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.upcoming-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.upcoming-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.upcoming-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.upcoming-card:hover .upcoming-image img {
+    transform: scale(1.1);
+}
+
+.upcoming-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.upcoming-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.upcoming-card:hover .upcoming-overlay {
+    opacity: 1;
+}
+
+.pre-order-btn {
+    background: #F3EB28;
+    color: #247246;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pre-order-btn:hover {
+    background: #e6df1f;
+    transform: translateY(0);
+}
+
+.upcoming-info {
+    padding: 20px;
+}
+
+.upcoming-info h3 {
+    color: #247246;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-info h3 i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.upcoming-info p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.upcoming-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.upcoming-features span {
+    background: #f0f9f0;
+    color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-features span i {
+    margin-right: 5px;
+}
+
+.promotion-tag {
+    background: #fff8e1;
+    color: #f57c00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.promotion-tag i {
+    margin-right: 8px;
+}
+
+.upcoming-promotions {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.promotions-title {
+    text-align: center;
+    color: #247246;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotions-title i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.promotion-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.promotion-card:hover {
+    transform: translateY(-5px);
+}
+
+.promotion-icon {
+    width: 60px;
+    height: 60px;
+    background: #f0f9f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.promotion-icon i {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.promotion-card h4 {
+    color: #247246;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.promotion-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.promotion-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.promotion-link:hover {
+    color: #247246;
+}
+
+.upcoming-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button i {
+    margin-right: 10px;
+}
+
+.cta-button:hover {
+    background: #3d8b40;
+    transform: translateY(-3px);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+/* Responsive Styles for Upcoming Products */
+@media (max-width: 992px) {
+    .upcoming-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .promotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-products {
+        padding: 60px 15px;
+    }
+    
+    .upcoming-products h2 {
+        font-size: 2rem;
+    }
+    
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .promotions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .upcoming-promotions {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-products h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .upcoming-image {
+        height: 200px;
+    }
+    
+    .upcoming-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .promotions-title {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 

@@ -18,28 +18,6 @@
     overflow: hidden;
 }
 
-/* .products-hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: url('background.jpg') center/cover no-repeat;
-    color: #fff;
-    position: relative;
-   
-    height: 80vh;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin-bottom: 60px;
-} */
-
-/* .products-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-} */
 
 .hero-title {
     font-size: clamp(2rem, 4vw, 4rem);
@@ -159,7 +137,7 @@
     text-align: center;
     margin-top: 80px;
     padding: 40px;
-    background: #4CAF50;
+    background: #247246;
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
