@@ -71,20 +71,21 @@
     border-radius: 15px; 
 }
 
-.services-cta a{
+.cta-button { 
+    text-align: center; 
+    padding: 10px; 
+    background: #4CAF50; 
+    color: #fff; 
+    border-radius: 8px; 
     text-decoration: none;
     --color: #fff;
     font-family: inherit;
     display: inline-block;
-    /* width: 8em; */
-    /* height: 2.6em; */
     line-height: 2.5em;
-    /* margin: 20px; */
     padding: 0 20px;
-    /* position: relative; */
     cursor: pointer;
     overflow: hidden;
-    border: 2px solid var(--color);
+    border: 2px solid #4CAF50;
     transition: color 0.5s;
     z-index: 1;
     font-size: 14px;
@@ -95,8 +96,7 @@
 }
 
 
-
-.services-cta a:before {
+.cta-button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -106,7 +106,215 @@
   border-radius: 50%;
 }
 
-.services-cta a:hover {
+.cta-button:hover {
   background-color: #fff;
   color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.cta-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .cta-button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .cta-button:active:before {
+    background: #4CAF50;
+    transition: background 0s;
+  }
+
+/* Order Process Section */
+.order-process {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.order-process h2 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.order-process h2 i {
+    margin-right: 15px;
+    animation: bounce 2s infinite;
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.process-step {
+    position: relative;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.step-content {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover .step-content {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(76, 175, 80, 0.15);
+}
+
+.step-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4CAF50, #247246);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.step-icon i {
+    font-size: 2rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .step-icon i {
+    transform: scale(1.2);
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #F3EB28;
+    color: #247246;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(243, 235, 40, 0.3);
+}
+
+.step-info {
+    flex-grow: 1;
+}
+
+.step-info h3 {
+    color: #247246;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.step-info p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.step-progress {
+    position: absolute;
+    left: 70px;
+    top: 110px;
+    bottom: -60px;
+    width: 2px;
+    z-index: 1;
+}
+
+.progress-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #4CAF50 50%, #e0e0e0 50%);
+    background-size: 100% 20px;
+    animation: progressLine 1s linear infinite;
+}
+
+.process-step:last-child .step-progress {
+    display: none;
+}
+
+@keyframes progressLine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .step-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .step-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .step-progress {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .step-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .step-info p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-process h2 {
+        font-size: 2rem;
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .step-icon i {
+        font-size: 1.5rem;
+    }
+
+    .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
 }

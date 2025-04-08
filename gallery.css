@@ -250,11 +250,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .whatsapp-icon:hover {
-    transform: scale(1.1);
-    background: #128C7E;
+    transform: scale(1.05);
+    background: #247246;
 }
 
 /* Responsive Design */
