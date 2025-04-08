@@ -64,7 +64,7 @@
 }
 
 .products-page h2{
-    color: var(--accent-color);
+    color: #4CAF50;
     font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
@@ -106,7 +106,7 @@
     margin: 10px 0 15px;
     font-size: 0.9em;
     font-weight: bold;
-    color: var(--accent-color); /* Match the theme color */
+    color: #4CAF50; /* Match the theme color */
 }
 
 .product-price span {
@@ -117,7 +117,7 @@
 
 .product-info h3 {
     font-size: 1.3rem;
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -132,7 +132,7 @@
 }
 
 .product-features span {
-    background: var(--accent-color);
+    background: #4CAF50;
     color: #fff;
     padding: 8px 15px;
     border-radius: 20px;
@@ -159,7 +159,7 @@
     text-align: center;
     margin-top: 80px;
     padding: 40px;
-    background: var(--secondary-color);
+    background: #4CAF50;
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -214,7 +214,7 @@
 
 .products-cta a:hover {
   background-color: #fff;
-  color: var(--accent-color);
+  color: #4CAF50;
 }
 
 .products-cta a:before {
@@ -229,7 +229,7 @@
 }
 
 .products-cta a:active:before {
-  background: var(--accent-color);
+  background: #4CAF50;
   transition: background 0s;
 }
 
@@ -352,7 +352,7 @@
     left: 0;
     width: 100%;
     height: 8px;
-    background: linear-gradient(90deg, var(--accent-color) 0%, #FFD700 100%);
+    background: linear-gradient(90deg, #4CAF50 0%, #FFD700 100%);
 }
 
 .price-list-header {
@@ -367,7 +367,7 @@
 
 .price-list-header h3 {
     font-size: 2.5em;
-    color: var(--accent-color);
+    color: #4CAF50;
     margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -387,7 +387,7 @@
 .header-decoration {
     width: 80px;
     height: 4px;
-    background: var(--accent-color);
+    background: #4CAF50;
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -407,7 +407,7 @@
     padding: 12px 25px;
     border-radius: 25px;
     cursor: pointer;
-    color: var(--secondary-color);
+    color: #4CAF50;
     font-weight: 600;
     transition: all 0.3s ease;
     display: flex;
@@ -429,7 +429,7 @@
     width: 100%;
     height: 100%;
     /* background: linear-gradient(45deg, var(--accent-color) 0%, #FFD700 100%); */
-    background-color: var(--accent-color);
+    background-color: #4CAF50;
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
@@ -472,7 +472,7 @@
     left: 0;
     width: 4px;
     height: 0;
-    background: linear-gradient(to bottom, var(--accent-color), #FFD700);
+    background: linear-gradient(to bottom, #4CAF50, #FFD700);
     transition: height 0.3s ease;
 }
 
@@ -499,7 +499,7 @@
 
 .price-tag {
     font-size: 1.4em;
-    color: var(--accent-color);
+    color: #4CAF50;
     font-weight: 700;
     margin: 10px 0;
 }
@@ -520,7 +520,7 @@
     position: absolute;
     top: 15px;
     right: -35px;
-    background: var(--accent-color);
+    background: #4CAF50;
     color: white;
     padding: 5px 40px;
     transform: rotate(45deg);
@@ -530,7 +530,7 @@
 
 .price-card.premium::after {
     content: '★ Premium';
-    background: var(--secondary-color);
+    background: #4CAF50;
 }
 
 /* Delivery Section */
@@ -542,7 +542,7 @@
 
 .delivery-section h3 {
     text-align: center;
-    color: var(--accent-color);
+    color: #4CAF50;
     font-size: 1.8em;
     margin-bottom: 30px;
     display: flex;
@@ -579,7 +579,7 @@
 }
 
 .delivery-price {
-    color: var(--accent-color);
+    color: #4CAF50;
     font-size: 1.3em;
     font-weight: 600;
 }

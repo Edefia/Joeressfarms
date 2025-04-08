@@ -29,7 +29,7 @@
 
 .about-text h2 { 
     font-size: 2rem; 
-    color: var(--accent-color); 
+    color: #4CAF50; 
     display: flex; 
     align-items: center; 
     gap: 10px;
@@ -48,7 +48,7 @@
 }
 
 .about-features .feature i {
-    color: var(--accent-color);
+    color: #4CAF50;
     font-size: 1.2rem;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .service-section h2 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -88,7 +88,7 @@
 }
 
 .mission-section h2 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -113,7 +113,7 @@
 }
 
 .mission-point i {
-    color: var(--accent-color);
+    color: #4CAF50;
 }
 
 /* Products Section */
@@ -126,14 +126,14 @@
 
 .products-section h2 {
     text-align: center;
-    color: var(--accent-color);
+    color: #4CAF50;
     margin-bottom: 40px;
     font-size: 2rem;
 }
 
 .products-section h2 i {
     margin-right: 10px;
-    color: var(--accent-color);
+    color: #4CAF50;
 }
 
 .products-grid {
@@ -173,7 +173,7 @@
 }
 
 .product-question i {
-    color: var(--accent-color);
+    color: #4CAF50;
     transition: transform 0.3s ease;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .product-category.active .product-question {
-    background: linear-gradient(135deg, var(--accent-color), #45a049);
+    background: linear-gradient(135deg, #4CAF50, #45a049);
 }
 
 .product-category.active .product-question h3 {
@@ -223,7 +223,7 @@
 }
 
 .product-answer ul li:hover {
-    color: var(--accent-color);
+    color: #4CAF50;
     transform: translateX(5px);
 }
 
@@ -231,7 +231,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--accent-color);
+    color: #4CAF50;
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -271,7 +271,7 @@
 }
 
 .faq-section h2 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -293,7 +293,7 @@
 }
 
 .faq-item h3 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -306,7 +306,7 @@
 }
 
 .safety-section h2 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -333,7 +333,7 @@
 }
 
 .safety-category h3 {
-    color: var(--accent-color);
+    color: #4CAF50;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -496,7 +496,7 @@
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: var(--accent-color);
+    background-color: #4CAF50;
     transition: width 0.3s ease;
 }
 
@@ -552,7 +552,7 @@
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--accent-color);
+    background: #4CAF50;
     transition: width 0.3s ease;
 }
 
@@ -677,7 +677,7 @@
 .about-cta { 
     text-align: center; 
     padding: 40px; 
-    background: var(--secondary-color); 
+    background: #247246; 
     color: #fff; 
     border-radius: 15px; 
 }
@@ -686,7 +686,7 @@
     text-align: center; 
     margin-top: 15px;
     padding: 10px; 
-    background: var(--secondary-color); 
+    background: #247246; 
     color: #fff; 
     border-radius: 8px; 
     text-decoration: none;
@@ -697,7 +697,7 @@
     padding: 0 20px;
     cursor: pointer;
     overflow: hidden;
-    border: 2px solid var(--color);
+    border: 2px solid #4CAF50;
     transition: color 0.5s;
     z-index: 1;
     font-size: 14px;
@@ -718,9 +718,9 @@
 }
 
 .cta-button:hover {
-  background-color: #fff;
-  color: var(--secondary-color);
-  border: 2px solid var(--accent-color);
+  background-color: #4CAF50;
+  color: #247246;
+  border: 2px solid #4CAF50;
 }
 
 .cta-button:before {
@@ -735,7 +735,7 @@
 }
   
 .cta-button:active:before {
-    background: var(--accent-color);
+    background: #4CAF50;
     transition: background 0s;
 }
 
@@ -767,7 +767,7 @@
 .faq-question h3, .safety-question h3, .product-question h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: var(--accent-color);
+    color: #4CAF50;
 }
 
 .faq-question i, .safety-question i, .product-question i {
@@ -803,7 +803,7 @@
 
 .faq-answer ul li:before, .safety-answer ul li:before, .product-answer ul li:before {
     content: "•";
-    color: var(--accent-color);
+    color: #4CAF50;
     position: absolute;
     left: 0;
 }
@@ -860,7 +860,7 @@
 
 .faq-item.active .faq-question,
 .safety-category.active .safety-question {
-    background: linear-gradient(135deg, var(--accent-color), #45a049);
+    background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
 }
 .safety-category.active .safety-question h3{
@@ -926,7 +926,7 @@
 }
 
 .faq-answer ul li:hover, .safety-answer ul li:hover {
-    color: var(--accent-color);
+    color: #4CAF50;
     transform: translateX(5px);
 }
 
@@ -934,7 +934,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--accent-color);
+    color: #4CAF50;
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -958,7 +958,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, var(--accent-color), transparent);
+    background: linear-gradient(90deg, #4CAF50, transparent);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
