@@ -78,7 +78,10 @@ body {
     padding: 10px 15px;
     border-radius: 5px; 
     transition: background 0.3s ease;
-    font-size: 1.1rem;
+    font-size: clamp(9px, 1.5vw, 12px);
+ }
+ #header nav #sidemenu a i{
+    font-size: clamp(9px, 1.5vw, 12px);
  }
 
  #header nav #sidemenu a:hover {
@@ -100,7 +103,7 @@ body {
 }
 
 #header .hero h1 {
-    font-size: clamp(16px, 3vw, 50px);
+    font-size: clamp(12px, 3vw, 30px);
     margin-bottom: 0;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     white-space: wrap;
@@ -120,7 +123,7 @@ body {
     color: #333;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: clamp(9px, 1.5vw, 12px);
     border-radius: 5px;
     transition: background 0.3s ease;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -216,8 +219,8 @@ nav ul li a:hover {
 }
 
 .about-text h2 {
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-    margin-bottom: 30px;
+    font-size: clamp(18px, 2.5vw, 26px);
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -226,8 +229,8 @@ nav ul li a:hover {
 
 
 .about-description {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: clamp(9px, 1.5vw, 14px);
+    line-height: 1.6;
     color: #666;
     margin-bottom: 30px;
 }
@@ -241,12 +244,12 @@ nav ul li a:hover {
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .feature i {
     color: #4CAF50;
-    font-size: 1.2rem;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .about-stats {
@@ -266,14 +269,14 @@ nav ul li a:hover {
 }
 
 .stat h3 {
-    font-size: 2.5rem;
+    font-size: clamp(18px, 2vw, 24px);
     color: #4CAF50;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .stat p {
+    font-size: clamp(12px, 1.1vw, 14px);
     color: #666;
-    font-size: 1.1rem;
 }
 
 .about-image {
@@ -298,8 +301,8 @@ nav ul li a:hover {
 }
 
 .our-values h2 {
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-    margin-bottom: 50px;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,15 +340,15 @@ nav ul li a:hover {
 }
 
 .value-card h3 {
-    color: #4CAF50;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #247246;
+    margin-bottom: 10px;
 }
 
 .value-card p {
+    font-size: clamp(12px, 1.1vw, 14px);
     color: #666;
     line-height: 1.6;
-    font-size: 1.1rem;
 }
 
 
@@ -356,9 +359,9 @@ nav ul li a:hover {
 }
 
 .services h2 {
+    font-size: clamp(18px, 2.5vw, 24px);
     text-align: center;
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,7 +404,7 @@ nav ul li a:hover {
 }
 
 .service-box h3 {
-    font-size: 1.5rem;
+    font-size: clamp(12px, 1.1vw, 14px);
     color: #4CAF50;
     margin: 20px 20px 10px; /* Adjusted margin */
     display: flex;
@@ -412,14 +415,15 @@ nav ul li a:hover {
 
 .service-box h3 i {
     color: #4CAF50; /* Icon color */
-    font-size: 1.5rem; /* Icon size */
+    font-size: clamp(14px, 1.5vw, 16px); /* Icon size */
 }
 
 .service-box p {
+    font-size: clamp(9px, 1.1vw, 12px);
     color: #666;
     line-height: 1.6;
     margin: 0 20px 20px; /* Adjusted margin */
-    font-size: 1.1rem;
+    
 }
 
 .service-box .feature {
@@ -427,7 +431,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
-    margin: 10px 20px 20px; /* Space between features */
+    margin: 10px 20px 10px; /* Space between features */
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #666;
 }
 
 .service-box .feature i {
@@ -463,10 +469,10 @@ nav ul li a:hover {
 }
 
 .products h2 {
+    font-size: clamp(18px, 2.5vw, 24px);
     color: #4CAF50;
-    font-size: 2em;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-out forwards;
@@ -545,6 +551,7 @@ nav ul li a:hover {
     font-weight: bold;
     transform: translateY(20px);
     transition: all 0.3s ease;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .product-card:hover .order-btn {
@@ -561,8 +568,8 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
+    font-size: clamp(12px, 1.1vw, 14px);
     color: #4CAF50;
-    font-size: 1.5em;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -570,6 +577,7 @@ nav ul li a:hover {
 }
 
 .product-info p {
+    font-size: clamp(9px, 1.1vw, 12px);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -585,135 +593,371 @@ nav ul li a:hover {
     background: #f0f0f0;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 0.9em;
     color: #555;
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .product-features i {
     color: #4CAF50;
-    font-size: 0.8em;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
-
-
-/* Our Team Section */
-.team {
-    padding: 100px 5%;
-    background-color: #f9f9f9;
+/* Upcoming Products Section */
+.upcoming-products {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
 }
 
-.team h2 {
+.upcoming-products h2 {
+    font-size: clamp(18px, 2.5vw, 24px);
     color: #4CAF50;
-    font-size: 2em;
     text-align: center;
-    margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
+    margin-bottom: 20px;
 }
 
-.team-grid {
+.section-subtitle {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.upcoming-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upcoming-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+    margin-bottom: 60px;
 }
 
-.team-member {
-    background: white;
-    border-radius: 15px;
+.upcoming-card {
+    background: #fff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.team-member:nth-child(1) { animation-delay: 0.3s; }
-.team-member:nth-child(2) { animation-delay: 0.5s; }
-.team-member:nth-child(3) { animation-delay: 0.7s; }
-
-.team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.member-image {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    height: 300px;
+}
+
+.upcoming-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-image {
+    position: relative;
+    height: 250px;
     overflow: hidden;
 }
 
-.member-image img {
+.upcoming-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top ;
     transition: transform 0.5s ease;
 }
 
-.team-member:hover .member-image img {
+.upcoming-card:hover .upcoming-image img {
     transform: scale(1.1);
 }
 
-.member-social {
+.upcoming-badge {
     position: absolute;
-    bottom: -50px;
+    top: 15px;
+    right: 15px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: clamp(9px, 1.5vw, 12px);
+    font-weight: bold;
+    z-index: 1;
+}
+
+.upcoming-overlay {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    background: rgba(76, 175, 80, 0.9);
-    padding: 15px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    gap: 15px;
-    transition: bottom 0.3s ease;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.team-member:hover .member-social {
-    bottom: 0;
+.upcoming-card:hover .upcoming-overlay {
+    opacity: 1;
 }
 
-.member-social a {
-    color: white;
-    font-size: 1.2em;
+.pre-order-btn {
+    background: #F3EB28;
+    color: #247246;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.pre-order-btn:hover {
+    background: #e6df1f;
+    transform: translateY(0);
+}
+
+.upcoming-info {
+    padding: 20px;
+}
+
+.upcoming-info h3 {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #247246;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-info h3 i {
+    margin-right: 10px;
+    color: #4CAF50;
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.upcoming-info p {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.upcoming-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.upcoming-features span {
+    background: #f0f9f0;
+    color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: clamp(9px, 1.5vw, 12px);
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-features span i {
+    margin-right: 5px;
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.promotion-tag {
+    background: #fff8e1;
+    color: #4CAF50;
+    padding: 8px 15px;
+    font-size: clamp(9px, 1.5vw, 12px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.promotion-tag i {
+    margin-right: 8px;
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.upcoming-promotions {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.promotions-title {
+    font-size: clamp(18px, 2vw, 22px);
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.promotions-title i {
+    margin-right: 10px;
+    color: #4CAF50;
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.promotion-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
-.member-social a:hover {
-    transform: translateY(-3px);
+.promotion-card:hover {
+    transform: translateY(-5px);
 }
 
-.member-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.member-info h3 {
-    color: #4CAF50;
-    font-size: 1.5em;
-    margin-bottom: 5px;
+.promotion-icon {
+    width: 60px;
+    height: 60px;
+    background: #f0f9f0;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.position {
-    color: #666;
-    font-size: 1.1em;
+.promotion-icon i {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.promotion-card h4 {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #247246;
     margin-bottom: 10px;
 }
 
-.bio {
-    color: #777;
+.promotion-card p {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
+
+.promotion-link {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #4CAF50;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.promotion-link:hover {
+    color: #247246;
+}
+
+.upcoming-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #666;
+    padding: 10px 25px;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button i {
+    margin-right: 10px;
+    font-size: clamp(12px, 1.1vw, 14px);
+
+}
+
+.cta-button:hover {
+    background: #3d8b40;
+    transform: translateY(-3px);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+/* Responsive Styles for Upcoming Products */
+@media (max-width: 992px) {
+    .upcoming-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .promotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-products {
+        padding: 60px 15px;
+    }
+    
+    .upcoming-products h2 {
+        font-size: 2rem;
+    }
+    
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .promotions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .upcoming-promotions {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-products h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .upcoming-image {
+        height: 200px;
+    }
+    
+    .upcoming-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .promotions-title {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* Contact Section */
 .contact {
@@ -731,16 +975,13 @@ nav ul li a:hover {
 }
 
 .contact-info h2, .contact-form h2 {
+    font-size: clamp(18px, 2.5vw, 24px);
     color: #4CAF50;
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-    margin-bottom: 30px;
-    opacity: 0;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
+    margin-bottom: 20px;
 }
 
 .contact-description {
+    font-size: clamp(9px, 1.5vw, 12px);
     color: #666;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -760,22 +1001,31 @@ nav ul li a:hover {
 
 .contact-item i {
     color: #4CAF50;
-    font-size: 1.5em;
     margin-top: 15px;
+    font-size: clamp(12px, 1.1vw, 14px);
+
 }
 
 .contact-text h3 {
-    color: #4CAF50;
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #247246;
     margin-bottom: 5px;
 }
 
 .contact-text p a{
+    font-size: clamp(9px, 1.5vw, 12px);
     color: #666;
     text-decoration: none;
 }
 
+.contact-text p{
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
+    text-decoration: none;
+}
 .social-media h3 {
     color: #4CAF50;
+    font-size: clamp(12px, 1.1vw, 14px);
     margin-bottom: 15px;
 }
 
@@ -794,6 +1044,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
@@ -818,7 +1069,7 @@ nav ul li a:hover {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .form-group textarea {
@@ -833,8 +1084,9 @@ nav ul li a:hover {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.1em;
+
     transition: all 0.3s ease;
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .submit-btn:hover {
@@ -860,8 +1112,8 @@ nav ul li a:hover {
 }
 
 .footer-section h3 {
+    font-size: clamp(12px, 1.1vw, 14px);
     color: white;
-    font-size: 1.3em;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 10px;
@@ -881,7 +1133,8 @@ nav ul li a:hover {
 .footer-section p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-    margin-bottom: 15px;
+    font-size: clamp(9px, 1.5vw, 12px);
+    margin-bottom: 20px;
 }
 
 .footer-section ul {
@@ -898,7 +1151,7 @@ nav ul li a:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
-    
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .footer-section ul li a:hover {
@@ -910,9 +1163,8 @@ nav ul li a:hover {
 .contact-list li {
     display: flex;
     align-items: center;
-    
-    /* gap: 10px; */
     color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .contact-list i {
@@ -927,6 +1179,7 @@ nav ul li a:hover {
 }
 
 .footer-bottom p {
+    font-size: clamp(9px, 1.5vw, 12px);
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1070,355 +1323,7 @@ img:hover {
     } 
 }
 
-/* Upcoming Products Section */
-.upcoming-products {
-    padding: 80px 20px;
-    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-}
 
-.upcoming-products h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #247246;
-    font-size: 2.5rem;
-}
-
-.section-subtitle {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 50px;
-    color: #666;
-    font-size: 1.1rem;
-}
-
-.upcoming-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.upcoming-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-.upcoming-card {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-}
-
-.upcoming-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.upcoming-image {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
-
-.upcoming-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.upcoming-card:hover .upcoming-image img {
-    transform: scale(1.1);
-}
-
-.upcoming-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #4CAF50;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    z-index: 1;
-}
-
-.upcoming-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.upcoming-card:hover .upcoming-overlay {
-    opacity: 1;
-}
-
-.pre-order-btn {
-    background: #F3EB28;
-    color: #247246;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transform: translateY(20px);
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.pre-order-btn:hover {
-    background: #e6df1f;
-    transform: translateY(0);
-}
-
-.upcoming-info {
-    padding: 20px;
-}
-
-.upcoming-info h3 {
-    color: #247246;
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-}
-
-.upcoming-info h3 i {
-    margin-right: 10px;
-    color: #4CAF50;
-}
-
-.upcoming-info p {
-    color: #666;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.upcoming-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.upcoming-features span {
-    background: #f0f9f0;
-    color: #4CAF50;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-}
-
-.upcoming-features span i {
-    margin-right: 5px;
-}
-
-.promotion-tag {
-    background: #fff8e1;
-    color: #f57c00;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.promotion-tag i {
-    margin-right: 8px;
-}
-
-.upcoming-promotions {
-    background: #f9f9f9;
-    padding: 40px;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-
-.promotions-title {
-    text-align: center;
-    color: #247246;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.promotions-title i {
-    margin-right: 10px;
-    color: #4CAF50;
-}
-
-.promotions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.promotion-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-}
-
-.promotion-card:hover {
-    transform: translateY(-5px);
-}
-
-.promotion-icon {
-    width: 60px;
-    height: 60px;
-    background: #f0f9f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.promotion-icon i {
-    font-size: 1.5rem;
-    color: #4CAF50;
-}
-
-.promotion-card h4 {
-    color: #247246;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.promotion-card p {
-    color: #666;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.promotion-link {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
-}
-
-.promotion-link:hover {
-    color: #247246;
-}
-
-.upcoming-cta {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.cta-button {
-    display: inline-flex;
-    align-items: center;
-    background: #4CAF50;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button i {
-    margin-right: 10px;
-}
-
-.cta-button:hover {
-    background: #3d8b40;
-    transform: translateY(-3px);
-}
-
-.pulse {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
-    }
-}
-
-/* Responsive Styles for Upcoming Products */
-@media (max-width: 992px) {
-    .upcoming-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .promotions-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .upcoming-products {
-        padding: 60px 15px;
-    }
-    
-    .upcoming-products h2 {
-        font-size: 2rem;
-    }
-    
-    .upcoming-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .promotions-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .upcoming-promotions {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .upcoming-products h2 {
-        font-size: 1.8rem;
-    }
-    
-    .section-subtitle {
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-    
-    .upcoming-image {
-        height: 200px;
-    }
-    
-    .upcoming-info h3 {
-        font-size: 1.2rem;
-    }
-    
-    .promotions-title {
-        font-size: 1.5rem;
-    }
-}
 
 
 

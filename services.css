@@ -11,9 +11,29 @@
     align-items: center;
 }
 
+.hero-title {
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
 .services-page { 
     padding: 100px 5%; 
     background: #fff; 
+}
+
+.services-page h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .services-container { 
@@ -27,6 +47,33 @@
 .service-card { 
     perspective: 1000px; 
 }
+.service-card h3 {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.service-box h3 {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
 
 .flowchart { 
     max-width: 1200px; 
@@ -38,9 +85,13 @@
     gap: 40px; 
     max-width: 1200px;  
 }
-.flowchart h2{
+.flowchart h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
     color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
 .flowchart-container { 
     display: flex; 
     align-items: center; 
@@ -59,6 +110,17 @@
     color: #4CAF50; 
     margin-bottom: 10px; 
 }
+.flow-item h3 {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+.flow-item p {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 .flow-arrow { 
     font-size: 1.5rem; 
     color: #FFD700; 
@@ -71,24 +133,45 @@
     border-radius: 15px; 
 }
 
+.service-features span {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #666;
+    margin-right: 15px;
+
+}
+
+.services-cta a {
+    font-size: clamp(9px, 1.5vw, 12px);
+}
+
+.services-cta h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.services-cta p {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #fff;
+    margin-bottom: 25px;
+}
 .cta-button { 
     text-align: center; 
-    padding: 10px; 
-    background: #4CAF50; 
-    color: #fff; 
+
+    background: #247246; 
     border-radius: 8px; 
     text-decoration: none;
     --color: #fff;
-    font-family: inherit;
+   
     display: inline-block;
-    line-height: 2.5em;
-    padding: 0 20px;
+    /* line-height: 2.5em; */
+    padding: 10px 20px;
     cursor: pointer;
     overflow: hidden;
     border: 2px solid #4CAF50;
     transition: color 0.5s;
     z-index: 1;
-    font-size: 14px;
+    font-size: clamp(9px, 1.5vw, 12px);
     border-radius: 6px;
     font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -137,7 +220,7 @@
 
 .order-process h2 {
     color: #4CAF50;
-    font-size: 2.5rem;
+    font-size: clamp(16px, 2.5vw, 24px);
     margin-bottom: 60px;
     text-align: center;
     position: relative;
@@ -165,7 +248,8 @@
 
 .step-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    
     position: relative;
     z-index: 2;
     background: #ffffff;
@@ -182,8 +266,8 @@
 
 .step-icon {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #4CAF50, #247246);
     border-radius: 50%;
     display: flex;
@@ -194,7 +278,7 @@
 }
 
 .step-icon i {
-    font-size: 2rem;
+    font-size: clamp(14px, 1.5vw, 16px);
     color: #ffffff;
     transition: transform 0.3s ease;
 }
@@ -215,7 +299,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: clamp(9px, 1.5vw, 12px);
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(243, 235, 40, 0.3);
 }
@@ -226,14 +310,14 @@
 
 .step-info h3 {
     color: #247246;
-    font-size: 1.4rem;
+    font-size: clamp(12px, 1.1vw, 14px);
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 .step-info p {
     color: #666;
-    font-size: 1rem;
+    font-size: clamp(9px, 1.5vw, 12px);
     line-height: 1.6;
     margin: 0;
 }
@@ -318,3 +402,22 @@
         font-size: 0.8rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,9 +25,10 @@
     margin: 0 auto; 
     padding: 0 20px; 
 }
-.contact-info h2 { 
-    font-size: 2rem; 
-    color: #4CAF50; 
+.contact-info h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: #4CAF50;
+    /* margin-bottom: 20px; */
 }
 .contact-details { 
     display: grid; 
@@ -40,13 +41,24 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 .contact-card h3 { 
-    color: #4CAF50; 
+    color: #4CAF50;
+    font-size: clamp(14px, 1.5vw, 16px);
 }
 .contact-card i{
     color: #4CAF50;
 }
+.contact-card p {
+    font-size: clamp(9px, 1.5vw, 12px);
+    color: #247246;
+    /* line-height: 1.6; */
+}
 .social-media { 
     margin-top: 30px; 
+}
+.social-media h3 {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #4CAF50;
+    margin-bottom: 15px;
 }
 .social-links a{
     text-decoration: none;
@@ -56,6 +68,35 @@
     padding: 30px; 
     border-radius: 15px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+.contact-form h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: clamp(9px, 1.5vw, 12px);
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 15px; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    resize: vertical;
+    width: 96%;
+}
+.submit-btn {
+    font-size: clamp(9px, 1.5vw, 12px);
+    padding: 10px 25px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 .glow-input { 
     transition: box-shadow 0.3s ease; 
@@ -126,10 +167,10 @@
 }
 
 .map-section h2 {
-    text-align: center;
+    font-size: clamp(16px, 2.5vw, 24px);
     color: #4CAF50;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .map-section h2 i {
@@ -183,3 +224,4 @@
         margin-bottom: 20px;
     }
 }
+
