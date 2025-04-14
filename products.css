@@ -20,7 +20,7 @@
 
 
 .hero-title {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #fff;
     margin-bottom: 20px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
@@ -33,7 +33,7 @@
 }
 
 .hero-subtitle {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #fff;
     margin-bottom: 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
@@ -42,7 +42,7 @@
 }
 
 .products-page h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     text-align: center;
     margin-bottom: 40px;
@@ -82,7 +82,7 @@
 }
 .product-price {
     margin: 10px 0 15px;
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    font-size: var(--fs-body);
     font-weight: bold;
     color: #4CAF50; /* Match the theme color */
 }
@@ -91,11 +91,11 @@
     background: #f0f0f0;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
 }
 
 .product-info h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #4CAF50;
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@
 }
 
 .product-info p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -115,7 +115,7 @@
     color: #fff;
     padding: 8px 15px;
     border-radius: 20px;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
 }
 
 .product-features span i{
@@ -129,7 +129,7 @@
     border-radius: 30px;
     font-weight: bold;
     transition: transform 0.3s ease, background 0.3s ease;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-cation);
 }
 
 .product-overlay .order-btn:hover {
@@ -148,7 +148,7 @@
 }
 
 .products-cta h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #fff;
     margin-bottom: 15px;
     display: flex;
@@ -158,7 +158,7 @@
 }
 
 .products-cta p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #fff;
     margin-bottom: 25px;
 }
@@ -176,7 +176,7 @@
     border: 2px solid var(--color);
     transition: color 0.5s;
     z-index: 1;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-button);
     border-radius: 6px;
     font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -347,7 +347,7 @@
 }
 
 .price-list-header h3 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 15px;
     font-weight: 700;
@@ -361,7 +361,7 @@
     background: rgba(255, 215, 0, 0.1);
     border-radius: 20px;
     color: #666;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
     margin-top: 10px;
 }
 
@@ -396,11 +396,11 @@
     gap: 8px;
     position: relative;
     overflow: hidden;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
 }
 
 .tab-btn i {
-    font-size: 1.2em;
+    font-size: var(--fs-caption);
 }
 
 .tab-btn::before {
@@ -474,13 +474,13 @@
 
 .price-card h4 {
     color: #247246;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .price-tag {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-caption);
     color: #4CAF50;
     font-weight: 700;
     margin: 10px 0;
@@ -491,7 +491,7 @@
     padding: 4px 12px;
     background: rgba(164, 164, 162, 0.1);
     border-radius: 12px;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
     color: #666;
     font-style: italic;
 }
@@ -524,7 +524,7 @@
 }
 
 .delivery-section h3 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     text-align: center;
     margin-bottom: 30px;
@@ -552,13 +552,13 @@
 }
 
 .delivery-card h4 {
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: var(--fs-body);
     color: #247246;
     margin-bottom: 10px;
 }
 
 .delivery-price {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
     color: #4CAF50;
     font-weight: bold;
     margin-bottom: 5px;

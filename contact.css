@@ -26,7 +26,7 @@
     padding: 0 20px; 
 }
 .contact-info h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     /* margin-bottom: 20px; */
 }
@@ -42,13 +42,13 @@
 }
 .contact-card h3 { 
     color: #4CAF50;
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
 }
 .contact-card i{
     color: #4CAF50;
 }
 .contact-card p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #247246;
     /* line-height: 1.6; */
 }
@@ -56,7 +56,7 @@
     margin-top: 30px; 
 }
 .social-media h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #4CAF50;
     margin-bottom: 15px;
 }
@@ -70,14 +70,14 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
 }
 .contact-form h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     width: 100%;
     padding: 10px;
     /* margin-bottom: 15px; */
@@ -89,7 +89,7 @@
     width: 96%;
 }
 .submit-btn {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-button);
     padding: 10px 25px;
     background: #4CAF50;
     color: #fff;
@@ -121,7 +121,7 @@
     border: 2px solid #4CAF50;
     transition: color 0.5s;
     z-index: 1;
-    font-size: 14px;
+    font-size: var(--fs-button);
     border-radius: 6px;
     font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -167,7 +167,7 @@
 }
 
 .map-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
     text-align: center;

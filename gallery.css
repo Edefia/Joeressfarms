@@ -340,3 +340,31 @@
     }
 }
 
+.hero-title {
+    font-size: var(--fs-heading);
+}
+
+.hero-subtitle {
+    font-size: var(--fs-subheading);
+}
+
+.gallery-page h2 {
+    font-size: var(--fs-heading);
+}
+
+.gallery-filters button {
+    font-size: var(--fs-button);
+}
+
+.gallery-item h3 {
+    font-size: var(--fs-subheading);
+}
+
+.gallery-item p {
+    font-size: var(--fs-body);
+}
+
+.gallery-category {
+    font-size: var(--fs-caption);
+}
+

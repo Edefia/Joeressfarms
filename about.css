@@ -28,7 +28,7 @@
 }
 
 .about-text h2 { 
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50; 
     display: flex; 
     align-items: center; 
@@ -37,7 +37,7 @@
 }
 
 .about-text p{
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     /* margin-bottom: 20px; */
@@ -52,11 +52,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
 }
 
 .about-features .feature i {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #4CAF50;
     /* margin-right: 10px; */
 }
@@ -81,13 +81,13 @@
 }
 
 .service-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
    
 }
 
 .service-section p{
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     /* margin-bottom: 20px; */
@@ -102,13 +102,13 @@
 }
 
 .mission-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
 }
 
 .mission-section p{
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     /* margin-bottom: 20px; */
@@ -122,13 +122,13 @@
 }
 
 .mission-point {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     margin-bottom: 10px;
 }
 
 .mission-point i {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #4CAF50;
     margin-right: 10px;
 }
@@ -142,7 +142,7 @@
 }
 
 .products-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
 }
@@ -182,7 +182,7 @@
 .product-question h4 {
     margin: 0;
     color: #333;
-    /* font-size: clamp(9px, 1.5vw, 12px); */
+    /* font-size: var(--fs-subheading); */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -201,7 +201,7 @@
 }
 
 .product-category.active .product-answer {
-    max-height: 1000px;
+    max-height: max-content;
     padding: 20px;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .product-answer p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -273,13 +273,13 @@
         padding: 0 15px;
     }
 
-    .product-question h4 {
+    /* .product-question h4 {
         font-size: 1.1rem;
     }
 
     .product-answer p {
         font-size: 0.9rem;
-    }
+    } */
 }
 
 /* FAQ Section */
@@ -288,7 +288,7 @@
 }
 
 .faq-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
 }
@@ -307,7 +307,7 @@
 }
 
 .faq-item h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #247246;
     margin-bottom: 10px;
 }
@@ -318,7 +318,7 @@
 }
 
 .safety-section h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     margin-bottom: 20px;
 }
@@ -342,14 +342,14 @@
 }
 
 .safety-category h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #247246;
     margin-bottom: 10px;
 }
 
 /* Animations */
 .spin-icon {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-button);
     color: #4CAF50;
     margin-right: 10px;
 }
@@ -697,7 +697,7 @@
     border: 2px solid #4CAF50;
     transition: color 0.5s;
     z-index: 1;
-    font-size: 14px;
+    font-size: var(--fs-button);
     border-radius: 6px;
     font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -759,7 +759,7 @@
 
 .faq-question h3, .safety-question h3, .product-question h4 {
     margin: 0;
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: var(--fs-body);
     color: #4CAF50;
 }
 
@@ -771,7 +771,7 @@
 .faq-answer, .safety-answer, .product-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: all 0.3s ease-out;
     background: #f9f9f9;
     border-radius: 0 0 8px 8px;
 }
@@ -779,8 +779,8 @@
 .faq-answer p, .safety-answer p, .product-answer p {
     margin: 0;
     padding: 15px;
+    font-size: var(--fs-body);
     color: #666;
-    font-size: clamp(9px, 1.5vw, 12px);
 }
 
 .faq-answer ul, .safety-answer ul, .product-answer ul {
@@ -794,7 +794,7 @@
     margin: 5px 0;
     padding-left: 20px;
     position: relative;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
 }
 
 .faq-answer ul li:before, .safety-answer ul li:before, .product-answer ul li:before {
@@ -808,7 +808,7 @@
 .faq-item.active .faq-answer,
 .safety-category.active .safety-answer,
 .product-category.active .product-answer {
-    max-height: 500px;
+    max-height: max-content;
 }
 
 .faq-item.active .fa-chevron-down,
@@ -880,7 +880,7 @@
 .safety-category.active .safety-answer {
     transform: scaleY(1);
     opacity: 1;
-    max-height: 1000px;
+    max-height: max-content;
 }
 
 .safety-category.active .safety-answer{
@@ -1043,19 +1043,19 @@
 }
 
 .about-cta h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #fff;
     margin-bottom: 15px;
 }
 
 .about-cta p {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-body);
     color: #fff;
     margin-bottom: 25px;
 }
 
 .about-cta a {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-button);
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;

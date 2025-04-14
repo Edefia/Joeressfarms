@@ -13,6 +13,12 @@ body {
     --primary-color: #F3EB28; /* Bright yellow for highlights or buttons */
     --secondary-color: #247246; /* Deep green for backgrounds or headers */
     --accent-color: #4CAF50; /* Light green for accents or borders */
+    --fs-button: clamp(12px, 1.1vw, 14px);
+    --fs-body: clamp(14px, 1.5vw, 15px);
+    --fs-heading: clamp(18px, 2vw, 24px);
+    --fs-subheading: clamp(16px, 1.5vw, 18px);
+    --fs-caption: clamp(9px, 1vw, 12px);
+    --fs-menu: clamp(12px, 1vw, 12px);
   }
 
 /* Navigation Bar */
@@ -78,10 +84,10 @@ body {
     padding: 10px 15px;
     border-radius: 5px; 
     transition: background 0.3s ease;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
  }
  #header nav #sidemenu a i{
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
  }
 
  #header nav #sidemenu a:hover {
@@ -103,7 +109,8 @@ body {
 }
 
 #header .hero h1 {
-    font-size: clamp(12px, 3vw, 30px);
+    /* font-size: clamp(12px, 3vw, 30px); */
+    font-size: var(--fs-heading);
     margin-bottom: 0;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     white-space: wrap;
@@ -112,7 +119,7 @@ body {
 }
 
 #header .hero p {
-    font-size: clamp(16px, 1vw, 8px);
+    font-size: var(--fs-body);
     margin: 10px 0 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -177,16 +184,16 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     nav ul li a {
-        font-size: 1.1rem;
+        font-size: var(--fs-body);
         padding: 12px 20px;
     }
     
     nav ul li a i {
-        font-size: 1rem;
+        font-size: var(--fs-body);
     }
-} */
+} */ */
 
  
 
@@ -1112,7 +1119,7 @@ nav ul li a:hover {
 }
 
 .footer-section h3 {
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: var(--fs-subheading);
     color: white;
     margin-bottom: 20px;
     position: relative;
@@ -1133,7 +1140,7 @@ nav ul li a:hover {
 .footer-section p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
     margin-bottom: 20px;
 }
 
@@ -1151,7 +1158,7 @@ nav ul li a:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
 }
 
 .footer-section ul li a:hover {
@@ -1164,7 +1171,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     color: rgba(255, 255, 255, 0.8);
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
 }
 
 .contact-list i {
@@ -1179,7 +1186,7 @@ nav ul li a:hover {
 }
 
 .footer-bottom p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-menu);
     color: rgba(255, 255, 255, 0.8);
 }
 

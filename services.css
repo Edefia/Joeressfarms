@@ -12,14 +12,14 @@
 }
 
 .hero-title {
-    font-size: clamp(16px, 2.5vw, 24px);
-    color: #fff;
+    font-size: var(--fs-heading);
+    /* color: #fff; */
     margin-bottom: 20px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .hero-subtitle {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #fff;
     margin-bottom: 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
@@ -30,7 +30,7 @@
 }
 
 .services-page h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     text-align: center;
     margin-bottom: 40px;
@@ -48,13 +48,13 @@
     perspective: 1000px; 
 }
 .service-card h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #4CAF50;
     margin-bottom: 10px;
 }
 
 .service-card p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -62,13 +62,13 @@
 
 
 .service-box h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #4CAF50;
     margin-bottom: 10px;
 }
 
 .service-box p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -86,7 +86,7 @@
     max-width: 1200px;  
 }
 .flowchart h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #4CAF50;
     text-align: center;
     margin-bottom: 30px;
@@ -111,12 +111,12 @@
     margin-bottom: 10px; 
 }
 .flow-item h3 {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #4CAF50;
     margin-bottom: 10px;
 }
 .flow-item p {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -133,25 +133,29 @@
     border-radius: 15px; 
 }
 
-.service-features span {
-    font-size: clamp(9px, 1.5vw, 12px);
+.feature span {
+    font-size: var(--fs-button);
     color: #666;
     margin-right: 15px;
 
 }
 
+.feature i {
+    font-size: var(--fs-button);
+}
+
 .services-cta a {
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-button);
 }
 
 .services-cta h2 {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     color: #fff;
     margin-bottom: 15px;
 }
 
 .services-cta p {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: var(--fs-subheading);
     color: #fff;
     margin-bottom: 25px;
 }
@@ -220,7 +224,7 @@
 
 .order-process h2 {
     color: #4CAF50;
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: var(--fs-heading);
     margin-bottom: 60px;
     text-align: center;
     position: relative;
@@ -299,7 +303,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-caption);
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(243, 235, 40, 0.3);
 }
@@ -310,14 +314,14 @@
 
 .step-info h3 {
     color: #247246;
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: var(--fs-subheading);
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 .step-info p {
     color: #666;
-    font-size: clamp(9px, 1.5vw, 12px);
+    font-size: var(--fs-body);
     line-height: 1.6;
     margin: 0;
 }
@@ -373,33 +377,33 @@
         transform: translateX(-50%);
     }
 
-    .step-info h3 {
+    /* .step-info h3 {
         font-size: 1.2rem;
     }
 
     .step-info p {
         font-size: 0.95rem;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
-    .order-process h2 {
+    /* .order-process h2 {
         font-size: 2rem;
-    }
+    } */
 
     .step-icon {
         width: 60px;
         height: 60px;
     }
 
-    .step-icon i {
+    /* .step-icon i {
         font-size: 1.5rem;
-    }
+    } */
 
     .step-number {
         width: 25px;
         height: 25px;
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
     }
 }
 

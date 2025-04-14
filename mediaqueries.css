@@ -27,7 +27,7 @@
    }
      body {
          overflow-x: hidden; /* Prevent horizontal scrolling */
-         -webkit-overflow-scrolling: touch; /* Enables smooth momentum-based scrolling on mobile */
+        -webkit-overflow-scrolling: touch; /*Enables smooth momentum-based scrolling on mobile */
      }
      .header-text{
          margin-top: 100%;
@@ -99,7 +99,7 @@
      opacity: 0;
      transform: translateX(50px); /* Start slightly off-screen */
      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-     font-size: clamp(12px, 1.5vw, 14px);
+     /* font-size: 24px; */
      
   }
 
@@ -175,11 +175,11 @@
 }
 
 /* Hero Section */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #header .hero p {
         font-size: 12px; 
     }
-}
+} */
 
 /* About Section */
 @media (max-width: 768px) {
@@ -207,13 +207,13 @@
         margin: 10px 0; 
     }
 
-    .service-box h3 {
+    /* .service-box h3 {
         font-size: 1.3rem; 
     }
 
     .service-box p {
         font-size: 0.9rem; 
-    }
+    } */
 }
 
 /* Products Section */
@@ -226,33 +226,15 @@
         margin: 10px 0;
     }
 
-    .product-info h3 {
+    /* .product-info h3 {
         font-size: 1.3rem; 
     }
 
     .product-info p {
         font-size: 0.9rem; 
-    }
+    } */
 }
 
-/* Team Section */
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    .team-member {
-        margin: 10px 0;
-    }
-
-    .member-info h3 {
-        font-size: 1.3rem; 
-    }
-
-    .member-info p {
-        font-size: 0.9rem; 
-    }
-}
 
 /* Contact Section */
 @media (max-width: 768px) {
@@ -277,9 +259,7 @@
         text-align: center; /* Center text */
     }
 
-    .footer-section h3 {
-        font-size: 1.2em; /* Adjust heading size */
-    }
+
     .footer-section ul{
         display: inline-flex;
         flex-direction: column;
@@ -292,9 +272,7 @@
         
     
     }
-    .footer-section p {
-        font-size: 0.9em; /* Adjust paragraph size */
-    }
+
 }
 
 .hidden {
@@ -312,9 +290,9 @@
     .contact-hero, .services-hero, .team-hero, .about-hero { padding: 40px 10px; }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .hero-title { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
     .about-text h2, .services-container h3, .team-card h3, .contact-info h2 { font-size: 1.5rem; }
     .timeline h2, .values-container h2, .flowchart h2, .join-team h2 { font-size: 2rem; }
-}
+} */
