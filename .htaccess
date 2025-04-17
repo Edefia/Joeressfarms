@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Rewrite URLs without .html extension
+RewriteRule ^index$ index.html [L]
 RewriteRule ^about$ about.html [L]
 RewriteRule ^products$ products.html [L]
 RewriteRule ^services$ services.html [L]
