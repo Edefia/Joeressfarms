@@ -1,7 +1,8 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #fff;
     padding: 0;
@@ -13,11 +14,11 @@ body {
     --primary-color: #F3EB28; /* Bright yellow for highlights or buttons */
     --secondary-color: #247246; /* Deep green for backgrounds or headers */
     --accent-color: #4CAF50; /* Light green for accents or borders */
-    --fs-button: clamp(12px, 1.1vw, 14px);
-    --fs-body: clamp(14px, 1.5vw, 15px);
+    --fs-button: clamp(14px, 1.1vw, 14px);
+    --fs-body: clamp(16px, 2.5vw, 16px);
     --fs-heading: clamp(18px, 2vw, 24px);
     --fs-subheading: clamp(16px, 1.5vw, 18px);
-    --fs-caption: clamp(9px, 1vw, 12px);
+    --fs-caption: clamp(12px, 1vw, 12px);
     --fs-menu: clamp(12px, 1vw, 12px);
   }
 
@@ -46,6 +47,10 @@ body {
     }
  }
  
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
 
  #header nav{
     display: flex;
@@ -122,7 +127,8 @@ body {
     font-size: var(--fs-body);
     margin: 10px 0 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Playfair Display', serif;
 }
 
 #header .cta-button {

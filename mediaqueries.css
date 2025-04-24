@@ -73,7 +73,7 @@
      /* Hide menu off-screen by default */
  #sidemenu {
      position: fixed;
-     top: 0;
+     top: -20px;
      right: -100%; /* Fully hidden */
      width: 200px;
      height: 100%;
