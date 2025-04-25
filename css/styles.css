@@ -115,7 +115,8 @@ nav {
 
 .nav-links li a {
     color: white;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-size: var(--fs-caption);
     padding: 8px 12px;
     border-radius: var(--border-radius);
     transition: var(--transition);
