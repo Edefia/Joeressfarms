@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joeress Farms</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="screens.css"> -->
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/screens.css"> -->
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon 1.jpeg">
+    <link rel="icon" type="image/webp" href="images/favicon 1.webp">
     <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Joeress Farms & Consult - Premium quality poultry products in Ghana. Fresh, safe, and delicious poultry straight from our farm to your table.">
     <meta name="keywords" content="poultry, chicken, farm fresh, Ghana, Accra, food delivery, quality meat, Joeress Farms, Joeress Farms & Consult, Ghana farms, poultry products, poultry meat, poultry products in Accra, poultry products in Accra, poultry products in Ghana, poultry products in Accra">
     <meta name="author" content="Joeress Farms and Foods">
     <meta property="og:title" content="Joeress Farms - Premium Poultry Products">
     <meta property="og:description" content="Fresh, safe, and delicious poultry products from Joeress Farms in Ghana.">
-    <meta property="og:image" content="Joeress Logo New@3x.png">
+    <meta property="og:image" content="images/Joeress Logo New@3x.webp">
     <meta property="og:url" content="https://joeressfarms.com">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <div id="header">
-        
+    <div class="page-transition"></div>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="window.location.href='https://joeressfarms.com'">
+                <img src="images/Joeress Logo New@3x.webp" alt="Logo" loading="lazy">
+            </div>
             <nav>
-                <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com">
-                <ul id="sidemenu">
-                    <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://joeressfarms.com" class="active"><i class="fas fa-house-chimney"></i> Home</a></li>
                     <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
                     <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
                     <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
                     <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
                     <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="fade-in"><i class="fas fa-seedling"></i> Providing Safe & Hygienic Fresh Poultry Products</h1>
-                    <p>Dedicated Poultry Meat Value Chain actor producing safe & hygienic fresh poultry products.</p>
-                    <a href="products.html#products" class="cta-button slide-up"><i class="fas fa-shopping-cart"></i> Buy Now</a>
-                </div>
-            </div>
-            
-        
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in"><i class="fas fa-seedling"></i> Providing Safe & Hygienic Fresh Poultry Products</h1>
+            <p>Dedicated Poultry Meat Value Chain actor producing safe & hygienic fresh poultry products.</p>
+            <a href="products.html#products" class="cta-button slide-up"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+        </div>
     </div>
 
     <!-- About Us Section -->
@@ -85,7 +87,7 @@
                 </div>
         </div>
         <div class="about-image slide-in-right">
-            <img src="ourteam.jpg" alt="Joerees Farms Team">
+            <img src="images/ourteam.webp" alt="Joerees Farms Team" loading="lazy">
         </div>
 
         </div>
@@ -115,7 +117,7 @@
             <h2 class="slide-in-left"><i class="fa-solid fa-truck"></i> Our Business Operations</h2>
             <div class="services-grid">
         <div class="service-box slide-in-left">
-            <img src="premium-quality.jpg" alt="Fresh Poultry">
+            <img src="images/premium-quality.webp" alt="Fresh Poultry" loading="lazy">
             <h3><i class="fas fa-egg"></i> Premium Poultry Products</h3>
             <p>We offer a comprehensive range of fresh poultry products, including whole chickens, chicken breasts, and chicken thighs. All products are processed in our modern facility under strict quality control measures.</p>
             <div class="feature">
@@ -129,7 +131,7 @@
         </div>
         
         <div class="service-box">
-            <img src="delivery vehicles.jpg" alt="Delivery Truck">
+            <img src="images/delivery vehicles.webp" alt="Delivery Truck" loading="lazy">
             <h3><i class="fas fa-shipping-fast"></i> Efficient Distribution</h3>
             <p>Our dedicated delivery fleet ensures timely delivery of fresh products across Accra. We offer daily free home delivery and flexible delivery schedules for wholesale customers.</p>
             <div class="feature">
@@ -143,7 +145,7 @@
         </div>
 
         <div class="service-box slide-in-right">
-            <img src="quality.jpg" alt="Farm Fresh">
+            <img src="images/quality.webp" alt="Farm Fresh" loading="lazy">
             <h3><i class="fas fa-check-circle"></i> Quality Assurance</h3>
             <p>Every product undergoes rigorous quality checks and is certified safe for consumption. We maintain complete traceability from farm to table, ensuring the highest standards of food safety.</p>
             <div class="feature">
@@ -164,7 +166,7 @@
         <div class="products-grid">
             <div class="product-card slide-in-left">
                 <div class="product-image">
-                <img src="chicken-full.jpg" alt="Whole Chicken">
+                <img src="images/chicken-full.webp" alt="Whole Chicken" loading="lazy">
                     <div class="product-overlay">
                         <a href="products.html#products" class="order-btn">Order Now</a>
                     </div>
@@ -181,7 +183,7 @@
 
             <div class="product-card fade-in">
                 <div class="product-image">
-                <img src="chicken-breast.jpg" alt="Chicken Breast">
+                <img src="images/chicken-breast.webp" alt="Chicken Breast" loading="lazy">
                     <div class="product-overlay">
                         <a href="products.html#products" class="order-btn">Order Now</a>
                     </div>
@@ -198,7 +200,7 @@
 
             <div class="product-card slide-in-right">
                 <div class="product-image">
-                <img src="chicken-thighs.jpg" alt="Chicken Thighs">
+                <img src="images/chicken-thighs.webp" alt="Chicken Thighs">
                     <div class="product-overlay">
                         <a href="products.html#products" class="order-btn">Order Now</a>
                     </div>
@@ -224,7 +226,7 @@
             <div class="upcoming-grid">
                 <div class="upcoming-card slide-in-left">
                     <div class="upcoming-image">
-                        <img src="bakery.jpg" alt="Fresh Bakery">
+                        <img src="images/bakery.webp" alt="Fresh Bakery">
                         <div class="upcoming-badge">Coming Soon</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -245,7 +247,7 @@
 
                 <div class="upcoming-card fade-in">
                     <div class="upcoming-image">
-                        <img src="vegetables.jpg" alt="Fresh Vegetables">
+                        <img src="images/vegetables.webp" alt="Fresh Vegetables">
                         <div class="upcoming-badge">New</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -266,7 +268,7 @@
 
                 <div class="upcoming-card slide-in-right">
                     <div class="upcoming-image">
-                        <img src="mutton.jpg" alt="Premium Mutton">
+                        <img src="images/mutton.webp" alt="Premium Mutton">
                         <div class="upcoming-badge">Limited Edition</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -289,7 +291,7 @@
             <div class="upcoming-grid" style="margin-top: 30px;">
                 <div class="upcoming-card slide-in-left">
                     <div class="upcoming-image">
-                        <img src="beef.jpg" alt="Premium Beef">
+                        <img src="images/beef.webp" alt="Premium Beef">
                         <div class="upcoming-badge">Coming Soon</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -310,7 +312,7 @@
 
                 <div class="upcoming-card fade-in">
                     <div class="upcoming-image">
-                        <img src="chevon.jpg" alt="Fresh Chevon">
+                        <img src="images/chevon.webp" alt="Fresh Chevon">
                         <div class="upcoming-badge">New</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -331,7 +333,7 @@
 
                 <div class="upcoming-card slide-in-right">
                     <div class="upcoming-image">
-                        <img src="crops.jpg" alt="Fresh Crops">
+                        <img src="images/crops.webp" alt="Fresh Crops">
                         <div class="upcoming-badge">Limited Edition</div>
                         <div class="upcoming-overlay">
                             <a href="contact.html#contact" class="pre-order-btn">Pre-Order Now</a>
@@ -352,13 +354,13 @@
             </div>
             
             <div class="upcoming-promotions">
-                <h3 class="promotions-title"><i class="fas fa-bullhorn"></i> Special Promotions</h3>
+                <h2 class="promotions-title"><i class="fas fa-bullhorn"></i> Special Promotions</h2>
                 <div class="promotions-grid">
                     <div class="promotion-card">
                         <div class="promotion-icon">
                             <i class="fas fa-calendar-alt"></i>
                         </div>
-                        <h4>Early Bird Discount</h4>
+                        <h3>Early Bird Discount</h3>
                         <p>Pre-order any upcoming product and get 10% off when you order 30 days in advance.</p>
                         <!-- <a href="products.html#promotions" class="promotion-link">Learn More</a> -->
                     </div>
@@ -367,7 +369,7 @@
                         <div class="promotion-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h4>Bulk Order Savings</h4>
+                        <h3>Bulk Order Savings</h3>
                         <p>Order in bulk for special events and save up to 25% on our upcoming premium products.</p>
                         <!-- <a href="products.html#promotions" class="promotion-link">Learn More</a> -->
                     </div>
@@ -376,7 +378,7 @@
                         <div class="promotion-icon">
                             <i class="fas fa-gift"></i>
                         </div>
-                        <h4>Free Gift with Purchase</h4>
+                        <h3>Free Gift with Purchase</h3>
                         <p>Get a complimentary recipe book with any pre-order of our upcoming products.</p>
                         <!-- <a href="products.html#promotions" class="promotion-link">Learn More</a> -->
                     </div>
@@ -500,7 +502,7 @@
                 <h3>About Us</h3>
                 <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
             <div class="footer-section">
-                <img src="Joeress Logo New@3x.png" alt="Joerees Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+                <img src="images/Joeress Logo New@3x.webp" alt="Joerees Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
             </div>
             </div>
             

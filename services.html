@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joeress Farms - Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="screens.css"> -->
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="icon" type="image/png" href="favicon 1.jpeg">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/screens.css"> -->
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="icon" type="image/webp" href="images/favicon 1.webp">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Explore Joeress Farms' comprehensive poultry services including premium products, efficient distribution, and quality assurance.">
@@ -17,48 +16,46 @@
     <meta name="author" content="Joeress Farms & Consult">
     <meta property="og:title" content="Joeress Farms Services - Excellence in Poultry">
     <meta property="og:description" content="Discover our exceptional poultry services including premium products, efficient distribution, and quality assurance.">
-    <meta property="og:image" content="services-banner.jpg">
+    <meta property="og:image" content="images/services-banner.webp">
     <meta property="og:url" content="https://joeressfarms.com/services">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <!-- Header from index.html -->
-    <div id="header">
-        <nav>
-            <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com'">
-            <ul id="sidemenu">
-                <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
-                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title bounce-in"><i class="fas fa-truck-moving"></i> Our Exceptional Services</h1>
-            <p class="hero-subtitle slide-in">Delivering Freshness and Quality, Every Step of the Way</p>
+    <div class="page-transition"></div>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="window.location.href='https://joeressfarms.com'">
+                <img src="images/Joeress Logo New@3x.webp" alt="Logo" loading="lazy">
             </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://joeressfarms.com" ><i class="fas fa-house-chimney"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-
+    </header>
+    <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title bounce-in"><i class="fas fa-truck-moving"></i> Our Exceptional Services</h1>
+                <p class="hero-subtitle slide-in">Delivering Freshness and Quality, Every Step of the Way</p>
+                </div>
+            </div>
     <!-- Enhanced Services Section -->
-    <section id="services" class="services-page">
-        <!-- Hero Banner -->
-        <!-- <div class="services-hero">
-            <h1 class="hero-title bounce-in"><i class="fas fa-truck-moving"></i> Our Exceptional Services</h1>
-            <p class="hero-subtitle slide-in">Delivering Freshness and Quality, Every Step of the Way</p>
-        </div> -->
-
+    <section id="services-page" class="services-page">
         <!-- Services Grid -->
                 <div class="services fade-in" id="services" style="margin-top: -100px; background: transparent;">
                     <h2 class="slide-in-left"><i class="fa-solid fa-truck"></i> Our Business Operations</h2>
                     <div class="services-grid">
                 <div class="service-box slide-in-left">
-                    <img src="premium-quality.jpg" alt="Fresh Poultry">
+                    <img src="images/premium-quality.webp" alt="Fresh Poultry" loading="lazy">
                     <h3><i class="fas fa-egg"></i> Premium Poultry Products</h3>
                     <p>We offer a comprehensive range of fresh poultry products, including whole chickens, chicken breasts, and chicken thighs. All products are processed in our modern facility under strict quality control measures.</p>
                     <div class="feature">
@@ -72,7 +69,7 @@
                 </div>
                 
                 <div class="service-box">
-                    <img src="delivery vehicles.jpg" alt="Delivery Truck">
+                    <img src="images/delivery vehicles.webp" alt="Delivery Truck" loading="lazy">
                     <h3><i class="fas fa-shipping-fast"></i> Efficient Distribution</h3>
                     <p>Our dedicated delivery fleet ensures timely delivery of fresh products across Accra. We offer daily free home delivery and flexible delivery schedules for wholesale customers.</p>
                     <div class="feature">
@@ -86,7 +83,7 @@
                 </div>
 
                 <div class="service-box slide-in-right">
-                    <img src="quality-1.jpg" alt="Farm Fresh">
+                    <img src="images/quality-1.webp" alt="Farm Fresh" loading="lazy">
                     <h3><i class="fas fa-check-circle"></i> Quality Assurance</h3>
                     <p>Every product undergoes rigorous quality checks and is certified safe for consumption. We maintain complete traceability from farm to table, ensuring the highest standards of food safety.</p>
                     <div class="feature">
@@ -205,7 +202,7 @@
             <div class="footer-section">
                 <h3>About Us</h3>
                 <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
-                <img src="joerees.jpg" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+                <img src="./images/Joeress Logo New@3x.webp" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>

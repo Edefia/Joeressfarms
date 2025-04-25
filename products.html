@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joeress Farms - Our Products</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="screens.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="icon" type="image/png" href="favicon 1.jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/screens.css">
+    <link rel="icon" type="image/webp" href="images/favicon 1.webp">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Explore Joeress Farms' premium poultry products, fresh seafood, vegetables, and fruits. Quality farm-fresh ingredients delivered to your doorstep.">
@@ -17,36 +16,39 @@
     <meta name="author" content="Joeress Farms & Consult">
     <meta property="og:title" content="Joeress Farms Products - Farm Fresh Quality">
     <meta property="og:description" content="Discover our premium selection of farm-fresh poultry, seafood, vegetables, and fruits.">
-    <meta property="og:image" content="products-banner.jpg">
+    <meta property="og:image" content="products-banner.webp">
     <meta property="og:url" content="https://joeressfarms.com/products">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <!-- Header from index.html -->
-    <div id="header">
-        <nav>
-            <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com'">
-            <ul id="sidemenu">
-                <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                <li><a href="#products"><i class="fas fa-drumstick-bite"></i> Products</a></li>
-                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title bounce-in"><i class="fas fa-drumstick-bite"></i> Explore Our Premium Poultry Products</h1>
-                <p class="hero-subtitle slide-in">Fresh, Safe, and Delicious – Straight from Our Farm to Your Table</p>
-                <a href="#product-list" class="cta-button pulse"><i class="fas fa-shopping-cart"></i> Shop Now</a>
+    <div class="page-transition"></div>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="window.location.href='https://joeressfarms.com'">
+                <img src="images/Joeress Logo New@3x.webp" alt="Logo" loading="lazy">
             </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://joeressfarms.com" ><i class="fas fa-house-chimney"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="products.html"class="active"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-
-    </div>
-
+    </header>
+        <div class="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title bounce-in"><i class="fas fa-drumstick-bite"></i> Explore Our Premium Poultry Products</h1>
+                        <p class="hero-subtitle slide-in">Fresh, Safe, and Delicious – Straight from Our Farm to Your Table</p>
+                        <a href="#product-list" class="cta-button pulse"><i class="fas fa-shopping-cart"></i> Shop Now</a>
+                    </div>
+            </div>
     <!-- Enhanced Products Section -->
     <section id="products" class="products-page">
         <h2 class="slide-in-left"><i class="fa-solid fa-drumstick-bite"></i> Our Products</h2>
@@ -59,7 +61,7 @@
     <!-- Chicken Wings -->
     <div class="product-card fade-in-up" style="animation-delay: 0.6s;">
         <div class="product-image">
-            <img src="chicken-wings.jpg" alt="Chicken Wings">
+            <img src="images/chicken-wings.webp" alt="Chicken Wings" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -79,7 +81,7 @@
     <!-- Chicken Drumsticks -->
     <div class="product-card fade-in-up" style="animation-delay: 0.8s;">
         <div class="product-image">
-            <img src="chicken-drumsticks.jpg" alt="Chicken Drumsticks">
+            <img src="images/chicken-drumsticks.webp" alt="Chicken Drumsticks" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -99,7 +101,7 @@
     <!-- Chicken Liver -->
     <div class="product-card fade-in-up" style="animation-delay: 1s;">
         <div class="product-image">
-            <img src="chicken-liver.jpg" alt="Chicken Liver">
+            <img src="images/chicken-liver.webp" alt="Chicken Liver" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -119,7 +121,7 @@
     <!-- Whole Chicken -->
     <div class="product-card fade-in-up">
         <div class="product-image">
-            <img src="chicken-full.jpg" alt="Whole Chicken">
+            <img src="images/chicken-full.webp" alt="Whole Chicken" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -139,7 +141,7 @@
     <!-- Chicken Breast -->
     <div class="product-card fade-in-up" style="animation-delay: 0.2s;">
         <div class="product-image">
-            <img src="chicken-breast.jpg" alt="Chicken Breast">
+            <img src="images/chicken-breast.webp" alt="Chicken Breast" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -159,7 +161,7 @@
     <!-- Chicken Thighs -->
     <div class="product-card fade-in-up" style="animation-delay: 0.4s;">
         <div class="product-image">
-            <img src="drumsticks.jpg" alt="Chicken Thighs">
+            <img src="images/drumsticks.webp" alt="Chicken Thighs" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -179,7 +181,7 @@
     <!-- Eggs -->
     <div class="product-card fade-in-up" style="animation-delay: 1.2s;">
         <div class="product-image">
-            <img src="eggs.jpg" alt="Eggs">
+            <img src="images/eggs.webp" alt="Eggs" loading="lazy">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -199,7 +201,7 @@
     <!-- Local Chicken -->
     <div class="product-card fade-in-up" style="animation-delay: 1.4s;">
         <div class="product-image">
-            <img src="chicken-full.jpg" alt="Local Chicken">
+            <img src="images/chicken-full.webp" alt="Local Chicken">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -219,7 +221,7 @@
     <!-- Turkey -->
     <div class="product-card fade-in-up" style="animation-delay: 1.6s;">
         <div class="product-image">
-            <img src="chicken-full-2.jpg" alt="Turkey">
+            <img src="images/chicken-full-2.webp" alt="Turkey">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -239,7 +241,7 @@
     <!-- Guinea Fowl -->
     <div class="product-card fade-in-up" style="animation-delay: 1.8s;">
         <div class="product-image">
-            <img src="chicken-full-1.jpg" alt="Guinea Fowl">
+            <img src="images/chicken-full-1.webp" alt="Guinea Fowl">
             <div class="product-overlay">
                 <a href="https://wa.link/snuubo" class="order-btn"><i class="fas fa-cart-plus"></i> Order Now</a>
             </div>
@@ -484,7 +486,7 @@
             <div class="footer-section">
                 <h3>About Us</h3>
                 <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
-                <img src="joerees.jpg" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+                <img src="./images/Joeress Logo New@3x.webp" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>

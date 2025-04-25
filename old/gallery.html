@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joeress Farms - Our Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" type="image/png" href="favicon 1.jpeg">
+    <link rel="stylesheet" href="index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Explore Joeress Farms' gallery showcasing our premium poultry products, facilities, and processes.">
+    <meta name="keywords" content="Joeress Farms, gallery, poultry products, facilities, farm fresh, Ghana">
+    <meta name="author" content="Joeress Farms & Consult">
+    <meta property="og:title" content="Joeress Farms Gallery - Visual Story">
+    <meta property="og:description" content="Explore our farm, products, and facilities through our carefully curated gallery.">
+    <meta property="og:image" content="gallery-banner.jpg">
+    <meta property="og:url" content="https://joeressfarms.com/gallery">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <nav>
+            <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com'">
+            <ul id="sidemenu">
+                <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title bounce-in"><i class="fas fa-images"></i> Our Gallery</h1>
+                <p class="hero-subtitle slide-in">A visual journey through our farm, products, and facilities</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery-page">
+        <div class="gallery-intro">
+            <h2>Welcome to Our Visual Story</h2>
+            <p>Explore our farm, products, and facilities through our carefully curated gallery. Each image tells a story of quality, dedication, and excellence.</p>
+        </div>
+
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="products">Products</button>
+            <button class="filter-btn" data-filter="facilities">Facilities</button>
+            <button class="filter-btn" data-filter="process">Our Process</button>
+        </div>
+
+        <div class="gallery-container">
+            <!-- Products Gallery -->
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="chicken-breast.jpg" alt="Chicken Breast">
+                    <div class="gallery-overlay">
+                        <h3>Premium Chicken Breast</h3>
+                        <p>Fresh, tender, and perfectly portioned</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="chicken-drumsticks.jpg" alt="Chicken Drumsticks">
+                    <div class="gallery-overlay">
+                        <h3>Juicy Drumsticks</h3>
+                        <p>Perfect for grilling and frying</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="chicken-wings.jpg" alt="Chicken Wings">
+                    <div class="gallery-overlay">
+                        <h3>Chicken Wings</h3>
+                        <p>Ideal for parties and gatherings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="chicken-liver.jpg" alt="Chicken Liver">
+                    <div class="gallery-overlay">
+                        <h3>Chicken Liver</h3>
+                        <p>Nutrient-rich and flavorful</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="chicken-gizzards.jpg" alt="Chicken Gizzards">
+                    <div class="gallery-overlay">
+                        <h3>Chicken Gizzards</h3>
+                        <p>Traditional favorite with unique texture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="products">
+                <div class="gallery-card">
+                    <img src="eggs.jpg" alt="Fresh Eggs">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Eggs</h3>
+                        <p>Farm-fresh eggs from our healthy hens</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities Gallery -->
+            <div class="gallery-item" data-category="facilities">
+                <div class="gallery-card">
+                    <img src="delivery vehicles.jpg" alt="Delivery Vehicles">
+                    <div class="gallery-overlay">
+                        <h3>Our Delivery Fleet</h3>
+                        <p>Ensuring timely delivery to our customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="facilities">
+                <div class="gallery-card">
+                    <img src="quality.jpg" alt="Quality Control">
+                    <div class="gallery-overlay">
+                        <h3>Quality Control</h3>
+                        <p>Rigorous standards for every product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="facilities">
+                <div class="gallery-card">
+                    <img src="quality-1.jpg" alt="Processing Facility">
+                    <div class="gallery-overlay">
+                        <h3>Processing Facility</h3>
+                        <p>State-of-the-art equipment for optimal quality</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Gallery -->
+            <div class="gallery-item" data-category="process">
+                <div class="gallery-card">
+                    <img src="order-process.jpg" alt="Order Process">
+                    <div class="gallery-overlay">
+                        <h3>Order Process</h3>
+                        <p>From farm to your table</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="process">
+                <div class="gallery-card">
+                    <img src="premium-quality.jpg" alt="Premium Quality">
+                    <div class="gallery-overlay">
+                        <h3>Premium Quality</h3>
+                        <p>Our commitment to excellence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="process">
+                <div class="gallery-card">
+                    <img src="why-us.jpg" alt="Why Choose Us">
+                    <div class="gallery-overlay">
+                        <h3>Why Choose Us</h3>
+                        <p>The Joeress Farms difference</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cta">
+            <h2>Want to see more?</h2>
+            <p>Visit our farm or contact us for a personalized tour of our facilities.</p>
+            <a href="https://wa.link/snuubo" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
+                <img src="joerees.jpg" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://joeressfarms.com"><i class="fas fa-home" style="color: #ffd700;"></i> Home</a></li>
+                    <li><a href="products.html"><i class="fas fa-box" style="color: #ffd700;"></i> Products</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle" style="color: #ffd700;"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell" style="color: #ffd700;"></i> Services</a></li>
+                    <li><a href="team.html"><i class="fas fa-images" style="color: #ffd700;"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope" style="color: #ffd700;"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> 020 8121199</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Accra, Ghana</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Joeress Farms & Consult. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.link/snuubo" target="_blank" class="whatsapp-icon" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

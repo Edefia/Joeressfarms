@@ -1,0 +1,268 @@
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        /* max-width: 100%; */
+        padding: 10px 15px;
+        position: relative;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .menu-toggle {
+        display: block !important; /* Force display on mobile */
+        position: relative;
+        right: 35px;
+        top: 0;
+        z-index: 1002;
+        padding: 8px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1); /* Add subtle background */
+        transition: all 0.3s ease;
+    }
+    
+    .menu-toggle:hover {
+        color: var(--primary-color);
+    }
+    
+    .menu-toggle i {
+        font-size: 24px;
+        color: white; /* Ensure icon is visible */
+        display: block; /* Ensure proper display */
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(36, 114, 70, 0.97) 0%, rgba(36, 114, 70, 0.95) 70%, rgba(36, 114, 70, 0.9) 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 30px;
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        z-index: 1001;
+        border-right: 1px solid rgba(243, 235, 40, 0.2);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    
+    .nav-links::before {
+        content: '';
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/Joeress Logo New@3x.webp') no-repeat;
+        background-position: center top;
+        background-size: 25%;
+        /* opacity: 0.05; */
+        pointer-events: none;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s ease;
+        transition-delay: calc(0.08s * var(--i, 0));
+        position: relative;
+        width: 70%;
+    }
+    
+    .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .nav-links li a {
+        font-size: var(--fs-menu);
+        padding: 12px 24px;
+        margin: 3px 0;
+        display: block;
+        text-align: center;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        letter-spacing: 0.5px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links li a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-color);
+        transition: width 0.3s ease;
+    }
+    
+    .nav-links li a:hover::before {
+        width: 100%;
+    }
+    
+    .nav-links li a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-links li a.active {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: var(--primary-color);
+        font-weight: 600;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .page-transition {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #247246;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+    }
+}
+
+
+ 
+
+/* About Section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; 
+        padding: 20px; 
+    }
+
+    .about-image {
+        max-width: 100%; 
+    }
+
+    .about-text {
+        margin-bottom: 20px; 
+    }
+}
+
+/* Services Section */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .service-box {
+        margin: 10px 0; 
+    }
+
+    /* .service-box h3 {
+        font-size: 1.3rem; 
+    }
+
+    .service-box p {
+        font-size: 0.9rem; 
+    } */
+}
+
+/* Products Section */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        margin: 10px 0;
+    }
+
+    /* .product-info h3 {
+        font-size: 1.3rem; 
+    }
+
+    .product-info p {
+        font-size: 0.9rem; 
+    } */
+}
+
+
+/* Contact Section */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr; 
+        
+    }
+
+    .contact-info{
+        padding: 0 10%;
+    }
+    .contact-form .form-group input,
+    .form-group textarea {
+        width: 92%; 
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack footer sections */
+        text-align: center; /* Center text */
+    }
+
+
+    .footer-section ul{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+    }
+    .footer-section h3::after {
+        left: 50%;
+        translate: -50% -50%;
+        
+    
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .about-container, .contact-container { grid-template-columns: 1fr; }
+    .timeline-item { flex-direction: column; text-align: center; }
+    .timeline-content { margin-left: 0; margin-top: 20px; }
+    .services-container, .team-container { grid-template-columns: 1fr; }
+    .flowchart-container { flex-direction: column; }
+    .flow-arrow { transform: rotate(90deg); }
+    .join-form { padding: 0 10px; }
+    .contact-hero, .services-hero, .team-hero, .about-hero { padding: 40px 10px; }
+}
+
+/* @media (max-width: 480px) {
+    .hero-title { font-size: 1.8rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .about-text h2, .services-container h3, .team-card h3, .contact-info h2 { font-size: 1.5rem; }
+    .timeline h2, .values-container h2, .flowchart h2, .join-team h2 { font-size: 2rem; }
+} */

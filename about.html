@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joeress Farms - About Us</title>
-    <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" type="image/png" href="favicon 1.jpeg">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="icon" type="image/webp" href="images/favicon 1.webp">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Learn about Joeress Farms & Consult - Ghana's premier poultry provider. Our mission, values, and commitment to quality.">
@@ -16,33 +15,38 @@
     <meta name="author" content="Joeress Farms & Consult">
     <meta property="og:title" content="About Joeress Farms - Our Story">
     <meta property="og:description" content="Discover the story behind Joeress Farms. Ghana's premier poultry provider.">
-    <meta property="og:image" content="ourteam.jpg">
+    <meta property="og:image" content="images/ourteam.webp">
     <meta property="og:url" content="https://joeressfarms.com/about">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <!-- Header from index.html -->
-    <div id="header">
-        <nav>
-            <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com'">
-            <ul id="sidemenu">
-                <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
-                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="hero">
+    <div class="page-transition"></div>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="window.location.href='https://joeressfarms.com'">
+                <img src="images/Joeress Logo New@3x.webp" alt="Logo">
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://joeressfarms.com" ><i class="fas fa-house-chimney"></i> Home</a></li>
+                    <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
             <div class="hero-content">
                 <h1 class="hero-title bounce-in"><i class="fas fa-tractor"></i> Rooted in Quality, Growing with Care</h1>
                 <p class="hero-subtitle slide-in">Discover the story behind Joeress Farms – Ghana's premier poultry provider.</p>
             </div>
         </div>
-    </div>
     <!-- Enhanced About Us Section -->
     <section id="about" class="about-page">
         
@@ -60,7 +64,7 @@
                 </div>
             </div>
             <div class="about-image fade-in-up" style="animation-delay: 0.6s;">
-                <img src="ourteam.jpg" alt="Joeress Farms Team">
+                <img src="images/ourteam.webp" alt="Joeress Farms Team">
             </div>
         </div>
 
@@ -282,15 +286,6 @@
                         <p>You can reach us through our phone number (020 8121199), WhatsApp, or through our contact form on the website.</p>
                     </div>
                 </div>
-                <!-- <div class="faq-item">
-                    <div class="faq-question">
-                        <h3><i class="fas fa-star"></i> Do you have a loyalty program?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we have a loyalty program for regular customers. You can earn points with each purchase and redeem them for discounts.</p>
-                    </div>
-                </div> -->
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3><i class="fas fa-gift"></i> Do you offer special packages?</h3>
@@ -409,7 +404,7 @@
             <div class="footer-section">
                 <h3>About Us</h3>
                 <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
-                <img src="joerees.jpg" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+                <img src="images/Joeress Logo New@3x.webp" alt="Joeress Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>

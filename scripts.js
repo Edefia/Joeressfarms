@@ -1,55 +1,57 @@
-// Sidemenu Handling 
-var sidemen = document.getElementById("sidemenu");
-var menuToggle = document.querySelector(".fa-bars");
-var closeMenuBtn = document.querySelector(".fa-xmark");
-var menuLinks = document.querySelectorAll("#sidemenu a");
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-function openmenu() {
-    if (window.innerWidth <= 768) {
-        sidemen.style.right = "0";
-        sidemen.style.display = "block";
-        menuToggle.style.display = "none";
-        closeMenuBtn.style.display = "block";
-        document.body.style.overflow = "hidden";
-        sidemen.classList.add("active");
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            // Toggle between menu and close icons
+            const icon = menuToggle.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
     }
-}
 
-function closemenu() {
-    if (window.innerWidth <= 768) {
-        sidemen.style.right = "-100%";
-        document.body.style.overflow = "";
-        sidemen.classList.remove("active");
-        menuToggle.style.display = "block";
-        closeMenuBtn.style.display = "none";
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (navLinks && navLinks.classList.contains('active') && 
+            !event.target.closest('.nav-links') && 
+            !event.target.closest('.menu-toggle')) {
+            navLinks.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Sticky header effect
+    function updateHeaderOnScroll() {
+        const header = document.querySelector('header');
+        if (header) {
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = '#2d8b55';// Lighter green when at top  
+                header.style.opacity = '0.95';
+            } else {
+                header.style.boxShadow = 'none';
+                header.style.background = '#247246';  // Solid color when scrolled
+                header.style.opacity = '1';
+            }
+        }
     }
-}
+    
+    window.addEventListener('scroll', updateHeaderOnScroll);
+    updateHeaderOnScroll(); // Initialize on page load
 
-menuLinks.forEach(link => link.addEventListener("click", closemenu));
-document.addEventListener("click", function (event) {
-    if (!sidemen.contains(event.target) && !menuToggle.contains(event.target)) closemenu();
-});
-if (menuToggle) menuToggle.addEventListener("click", openmenu);
-if (closeMenuBtn) closeMenuBtn.addEventListener("click", closemenu);
-
-// Scroll Effects
-// window.addEventListener('scroll', function() {
-//     const header = document.getElementById('header');
-//     if (window.scrollY > 50) header.classList.add('scrolled');
-//     else header.classList.remove('scrolled');
-// });
-
-// Smooth Scroll
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         const target = document.querySelector(this.getAttribute('href'));
-//         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//     });
-// });
-
-// Reveal Animations
-document.addEventListener("DOMContentLoaded", function () {
+    // Reveal Animations
     function revealElements() {
         const elements = document.querySelectorAll(".fade-in, .slide-in, .bounce-in, .fade-in-up, .slide-in-left, .slide-in-right");
         const windowHeight = window.innerHeight;
@@ -61,5 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", revealElements);
-    revealElements();
+    revealElements(); // Initialize on page load
+    
+    // Page transition effect
+    const pageTransition = document.querySelector('.page-transition');
+    if (pageTransition) {
+        pageTransition.style.opacity = '1';
+        setTimeout(() => {
+            pageTransition.style.opacity = '0';
+        }, 200);
+    }
 });
+

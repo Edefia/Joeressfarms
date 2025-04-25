@@ -20,6 +20,22 @@ RewriteRule ^contact$ contact.html [L]
 RewriteCond %{THE_REQUEST} \.html
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
+# Enable caching for images
+<IfModule mod_expires.c>
+ExpiresActive On
 
+# Cache images for 1 month
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>
+
+# Add additional headers for caching control
+<IfModule mod_headers.c>
+# For images - enable client-side caching
+<FilesMatch "\.(webp|svg|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+</IfModule>
 
 

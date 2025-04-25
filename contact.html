@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joeress Farms - Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" type="image/png" href="favicon 1.jpeg">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="icon" type="image/webp" href="images/favicon 1.webp">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bd48893fe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Contact Joeress Farms for premium poultry products. Get in touch with our team for orders, inquiries, or partnership opportunities.">
@@ -16,34 +15,40 @@
     <meta name="author" content="Joeress Farms & Consult">
     <meta property="og:title" content="Contact Joeress Farms - Get in Touch">
     <meta property="og:description" content="Reach out to Joeress Farms for premium poultry products and exceptional customer service.">
-    <meta property="og:image" content="contact-banner.jpg">
+    <meta property="og:image" content="images/contact-banner.webp">
     <meta property="og:url" content="https://joeressfarms.com/contact">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <!-- Header from index.html -->
-    <div id="header">
-        <nav>
-            <img src="Joeress Logo New@3x.png" alt="Joeress Farms Logo" onclick="window.location.href = 'https://joeressfarms.com'">
-            <ul id="sidemenu">
-                <li><a href="https://joeressfarms.com"><i class="fas fa-house-chimney"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
-                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="contact.html"><i class="fas fa-square-phone"></i> Contact Us</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-
-        <div class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title bounce-in"><i class="fas fa-map-pin pulse-icon"></i> Get in Touch</h1>
-            <p class="hero-subtitle slide-in">We're here to assist you with the best poultry solutions!</p>
+    <div class="page-transition"></div>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="window.location.href='https://joeressfarms.com'">
+                <img src="images/Joeress Logo New@3x.webp" alt="Logo" loading="lazy">
             </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://joeressfarms.com" ><i class="fas fa-house-chimney"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-drumstick-bite"></i> Products</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-square-phone"></i> Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title bounce-in"><i class="fas fa-map-pin pulse-icon"></i> Get in Touch</h1>
+                <p class="hero-subtitle slide-in">We're here to assist you with the best poultry solutions!</p>
+                </div>
     </div>
+
 
     <!-- Enhanced Contact Us Section -->
     <section id="contact" class="contact-page">
@@ -57,7 +62,7 @@
                     <div class="contact-card slide-in-left">
                         <i class="fas fa-phone-alt spin-icon"></i>
                         <h3>Phone / WhatsApp</h3>
-                        <p><a href="tel:+233208121199" style="text-decoration: none; color: black;">0208121199</a></p>
+                        <p><a href="tel:+233208121199">0208121199</a></p>
                     </div>
                     <div class="contact-card slide-in-left" style="animation-delay: 0.2s;">
                         <i class="fas fa-clock spin-icon"></i>
@@ -108,12 +113,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.424089286982!2d-0.20753832627497534!3d5.771843431444128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf776bdf1495d7%3A0xbc24e39ed7669e8b!2sJoerees%20Farms%20%26%20Foods!5e1!3m2!1sen!2sgh!4v1744126225635!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
-        <!-- Live Chat -->
-        <!-- <div class="chat-bubble">
-            <i class="fas fa-comment-dots wiggle-icon"></i>
-            <p>Chat with us now!</p>
-        </div> -->
     </section>
 
     <!-- Footer from index.html -->
@@ -122,7 +121,7 @@
             <div class="footer-section">
                 <h3>About Us</h3>
                 <p>Joeress Farms & Consult is committed to providing premium quality poultry products while maintaining the highest standards of safety and hygiene.</p>
-                <img src="joerees.jpg" alt="Joerees Farms Logo" style="width: 70px; border-radius: 20%; height: auto;">
+                <img src="images/Joeress Logo New@3x.webp" alt="Joerees Farms Logo" style="width: 70px; border-radius: 20%; height: auto;" loading="lazy">
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
